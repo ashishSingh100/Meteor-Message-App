@@ -1,0 +1,93 @@
+<head>
+    <title>Message.Me</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="container new">
+        <div class="nav navbar-fixed">
+            <div class="row">
+                <div class="col-offset-md-1 col-md-6 col-lg-7 col-xs-12">
+                    <h3>MESSAGE.me</h3>
+                </div>
+                <div class="col-md-5 col-lg-5 col-xs-12">
+                    {{> loginButtons}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b">
+        {{> entrys}}
+    </div>
+
+
+<div class="container sexy">
+
+    {{> info}}
+
+    </div>
+
+</body>
+
+
+
+<template name="entrys">
+    
+    <div class="row">
+    <div class="col-md-offset-4 col-md-4 col-lg-4 col-xs-12">
+    <form class='js-form'>
+  TOPIC:<br>
+  <input class="f" type="text"  name="Name"><br>
+  MESSAGE:<br>
+        <textarea class="f" col="10" rows="3" name="Age"></textarea>
+ <br>
+  <input type="submit" class="js-submit" value="Submit">
+        </form>
+    </div>
+   
+    </div>
+    
+</template>
+
+<template name="info">
+ <div class="row">
+     <div class='col-md-6'>
+    <h2>&nbsp; &nbsp;  &nbsp;<b>MESSAGE BOARD</b></h2>
+     </div>
+     <div class="col-md-6 col-lg-6 ">
+    <input type="text" name="search" class="search" placeholder="Search..">
+     </div>
+    </div>
+    <div class='row'>
+        
+{{#each members}}
+    <div class="thumbnail col-offset-md-2 col-offset-lg-2 col-md-10 col-lg-10 col-xs-12" id="{{_id}}" >
+    <h4>{{name}}</h4>
+        <hr>
+        <h4>{{user}}</h4>
+    <br/>
+        <h5>{{age}}</h5>
+        
+        <h6>{{registeredOn}}</h6>
+        <hr>
+        <div class="row">
+            <div class='col-md-6 col-lg-6 col-xs-12'>
+        {{> social_buttons}}
+            {{> likeButton }};
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6">
+            <button class="js-del-image btn btn-warning">Delete Me</button>
+            </div>
+        </div>
+            </div>
+
+  {{/each}}
+        
+    
+    
+    </div>
+    
+</template>

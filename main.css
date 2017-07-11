@@ -1,0 +1,111 @@
+/* CSS declarations go here */
+
+h3 {
+    color: rgb(255, 114, 113);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+}
+
+.fake {
+
+    width: 150px;
+    height: 150px;
+    margin-left: 30%;
+}
+
+
+.social-button-group {
+    display: inline-block;
+    margin: 10 20px;
+}
+
+.social-button-group a {
+    text-decoration: none;
+    color: rgb(255, 114, 113);
+}
+
+.social-button-group a:hover {
+    color: black;
+}
+
+.social-button-group span {
+    margin-left: 5px;
+    color: grey;
+    font-size: 0.8em;
+}
+
+.new {
+
+    background-color: rgb(246, 246, 246)​;
+    width: 100%;
+    padding: 40px;
+}
+
+#login-buttons {
+    padding-top: 34px;
+    font-size: 30px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.login-link-text {
+
+    color: rgb(255, 114, 113);
+    text-emphasis-style: sesame;
+}
+
+.b {
+    padding-top: 50px;
+    height: 350px;
+    background-color: rgb(255, 114, 113);
+}
+
+.js-form {
+
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 15px;
+}
+
+.js-submit {
+
+    background-color: rgb(255, 114, 113);
+    color: whitesmoke;
+    padding: 10px;
+    border: 0px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 15px;
+}
+
+.sexy {
+
+    background-color: whitesmoke;
+    width: 100%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 20px;
+}
+
+.thumbnail {
+
+    padding-left: 25px;
+    margin: 20px;
+}
+
+input[type=text] {
+    margin-top: 20px;
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+/* When the input field gets focus, change its width to 100% */
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+.like-button-container {
+    color: rgb(255, 114, 113);
+}
