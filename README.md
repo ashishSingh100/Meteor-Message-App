@@ -1,7 +1,5 @@
 # Meteor-Message-App
-A Simple Messaging App 
-
-<h1>Made Using MeteorJs and MongoDB</h1>
+A Simple Messaging App made Using MeteorJs and MongoDB
 
 <h1>Features</h1>
 Login Functionality :Twitter and Facebook, Multi User
